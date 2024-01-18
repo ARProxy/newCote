@@ -20,7 +20,7 @@ public class B_souvenir {
         while(queue.size() > 1) {
 
             int game = (int)Math.pow(sum, 3);
-
+                
 
             sum++;
         }
