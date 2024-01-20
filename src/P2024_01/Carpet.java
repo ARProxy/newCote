@@ -17,6 +17,10 @@ public class Carpet {
                 System.out.println(Arrays.toString(new int[]{width, height}));
             }
         }
+
+        char[] ch = {'a', 'b'};
+
+        System.out.println(String.valueOf(ch[0])+String.valueOf(ch[1]));
     }
 }
 //어떻게 노랭이 2개 주변으로 채운 사각형 브라운 10개를 만들까
