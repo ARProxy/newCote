@@ -27,7 +27,7 @@ public class EnglishGame {
         Set<String> set = new HashSet<>();
         set.add(words[0]);
 
-        for(int i=1; i< words.length; i++) {
+        for (int i = 1; i < words.length; i++) {
             if(set.contains(words[i]) || !words[i - 1].endsWith(words[i].substring(0, 1))) {
                 answer[0] = (i % n) + 1;
                 answer[1] = (i / n) + 1;
