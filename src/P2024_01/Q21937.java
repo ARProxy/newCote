@@ -14,7 +14,7 @@ public class Q21937 {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        List<int[]> list = new ArrayList<>(){{
+        List<int[]> list = new ArrayList<>() {{
             for (int i = 0; i < m; i++) {
                 int[] arr = new int[]{sc.nextInt(), sc.nextInt()};
              add(arr);
@@ -22,7 +22,8 @@ public class Q21937 {
         }
         };
         int x = sc.nextInt();
-        Map<Integer, List<Integer>> map = new HashMap<>(){{
+        Map<Integer, List<Integer>> map = new HashMap<>() {
+            {
             for (int i = 1; i <= n ; i++) {
                 put(i, new ArrayList<>());
             }

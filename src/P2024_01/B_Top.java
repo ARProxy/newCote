@@ -10,23 +10,23 @@ public class B_Top {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int heights[] = new int[n];
-        for(int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             heights[i] = sc.nextInt();
         }
         Stack<Integer> stack = new Stack<>();
         int[] result = new int[n];
-        for(int i=0; i<n; i++) {
-            while(!stack.isEmpty() && heights[stack.peek()] < heights[i]) {
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && heights[stack.peek()] < heights[i]) {
                 stack.pop();
             }
-            if(stack.isEmpty()) {
+            if (stack.isEmpty()) {
                 result[i] = 0;
             } else {
                 result[i] = stack.peek() + 1;
             }
             stack.push(i);
         }
-        for(int i=0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print(result[i] + " ");
         }
 //        List<Integer> towers = new ArrayList<>();
