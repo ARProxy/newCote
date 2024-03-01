@@ -18,6 +18,7 @@ public class B_17413 {
         List<String> result = solution.transformArray(list);
         List<String> answer = solution.reverseInside(result);
         System.out.println(String.join("", answer));
+
     }
 }
 interface transform {
