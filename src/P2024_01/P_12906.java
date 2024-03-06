@@ -15,6 +15,7 @@ class Solution12906 {
     public int[] solution(int[] arr) {
         return IntStream.range(0, arr.length)
                 .filter(i -> i == 0 || arr[i] != arr[i - 1])
+//                .peek(System.out::println)
                 .map(i -> arr[i])
                 .toArray();
     }

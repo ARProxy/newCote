@@ -21,6 +21,7 @@ class Solution42586 {
         for (int i = 0; i < progresses.size(); i++) {
             int days = (int) Math.ceil((100.0 - progresses.get(i)) / speeds.get(i));
             complete.add(days);
+            System.out.println(days);
         }
         int currentMaxDays = complete.get(0);
         int count = 1;
@@ -33,6 +34,7 @@ class Solution42586 {
                 currentMaxDays = complete.get(i);
                 count = 1;
             }
+            System.out.println(count);
         }
         result.add(count);
         return result;
