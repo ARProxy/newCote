@@ -5,7 +5,7 @@ import java.util.*;
 public class B_2346 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        //왜 안돼
         int n = sc.nextInt();
         LinkedList<Map.Entry<Integer, Integer>> queue = new LinkedList<>() {
             {
