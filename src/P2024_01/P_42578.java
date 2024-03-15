@@ -33,6 +33,7 @@ class SolutionCloth {
                 }
             }
         };
+
         System.out.println(map);
 
         int result = 1;
