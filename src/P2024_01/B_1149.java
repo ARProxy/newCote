@@ -24,8 +24,11 @@ public class B_1149 {
             Map<String, Integer> previous = list.get(i - 1);
 
             current.put("R", current.get("R") + Math.min(previous.get("G"), previous.get("B")));
+            System.out.println(current);
             current.put("G", current.get("G") + Math.min(previous.get("R"), previous.get("B")));
+            System.out.println(current);
             current.put("B", current.get("B") + Math.min(previous.get("R"), previous.get("G")));
+            System.out.println(current);
         }
 
         Map<String, Integer> lastHouse = list.get(n - 1);
