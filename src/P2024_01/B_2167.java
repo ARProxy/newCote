@@ -24,7 +24,8 @@ public class B_2167 {
                 result[i][j] = sc.nextInt() - 1;
             }
         }
-
+        System.out.println(Arrays.deepToString(nums));
+        System.out.println(Arrays.deepToString(result));
         for (int[] arr : result) {
             long sum = 0;
             for (int i = arr[0]; i <= arr[2]; i++) {

@@ -34,7 +34,7 @@ public class B_2003 {
         System.out.println(towPointer(nums, m));
         sc.close();
     }
-    //투포인터로 풀어보기
+
     private static int towPointer(int[] nums, int m) {
         int count = 0;
         int start = 0, end = 0, sum = 0;
