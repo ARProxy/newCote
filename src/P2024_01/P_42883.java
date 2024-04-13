@@ -21,7 +21,9 @@ public class P_42883 {
                 k--;
             }
             System.out.print(stack);
-            stack.push(c);
+            if(stack.size() < number.length() - k) {
+                stack.push(c);
+            }
         }
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < stack.size(); i++) {

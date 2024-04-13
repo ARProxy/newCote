@@ -14,7 +14,8 @@ public class B_2217 {
         for (int i = 0; i < n; i++) {
             ropes[i] = sc.nextInt();
         }
-
+        //Integer 타입으로 배열을 선언하는 이유는 Arrays.sort는 두 형태로 오버로드 되있기 때문
+        //기본형 배열은 오름차순만 됌, 객체 배열은 커스텀 비교를 매개변수로 받을 수 있음
         Arrays.sort(ropes, (a, b) -> b - a);
 
         int max = 0;
